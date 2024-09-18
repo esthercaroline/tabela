@@ -57,4 +57,4 @@ jobs:
         script: |
           docker stop tabela
           docker rm --force tabela
-          docker run -d -p 8080:8080 --network=rede --name tabela esthercaroline/tabela:${{ github.sha }}
+          docker run -d -p 8082:8082 --network=rede --name tabela esthercaroline/tabela:${{ github.sha }}
